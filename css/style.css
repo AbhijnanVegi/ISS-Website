@@ -1,0 +1,115 @@
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome div h1 {
+  font-size: 120px;
+  margin-bottom: auto;
+}
+
+.welcome div {
+  color: white;
+  padding-top: 20px;
+}
+
+.welcome h2 {
+  margin-left: 10px;
+  margin-top: auto;
+  color: transparent;
+  font-size: 220%;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.welcome div p {
+  font-size: 180%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+@keyframes fadein {
+  from {
+    color: transparent;
+  }
+  to {
+    color: white;
+  }
+}
+
+.content {
+    margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.container div {
+    /* background-color: aliceblue; */
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    max-width: 500px;
+    color: aliceblue
+}
+
+#about {
+  margin-right: 200px;
+}
+
+#pfp-div {
+    border-radius: 100%;
+    overflow: hidden;
+    padding:0;
+}
+
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ico {
+    border-radius: 100%;
+    margin-top: 10px;
+}
+
+#about h1{
+    text-shadow: -1px 1px 1px whitesmoke;
+}
+
+#gallery {
+  max-width: 75%;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+}
+
+.carousel div {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel p {
+  margin: auto;
+}

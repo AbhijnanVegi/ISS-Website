@@ -86,9 +86,6 @@ a{
     margin-top: 10px;
 }
 
-#about h1{
-    text-shadow: -1px 1px 1px whitesmoke;
-}
 
 #gallery {
   max-width: 75%;
@@ -112,4 +109,30 @@ a{
 
 .carousel p {
   margin: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  color: aliceblue;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid rgb(107, 212, 216);
+  text-align: center;
+  animation: bordergradiant 15s ease infinite;
+  padding: 3px;
+}
+
+@keyframes bordergradiant {
+  0% {
+		border-color: rgb(107, 212, 216);
+	}
+	50% {
+		border-color: rgb(216, 107, 201);
+	}
+	100% {
+		border-color: rgb(107, 212, 216);
+	}
 }

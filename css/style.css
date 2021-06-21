@@ -48,6 +48,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 
 a{
@@ -65,7 +66,7 @@ a{
 }
 
 #about {
-  margin-right: 200px;
+  margin-right: 10%;
 }
 
 #pfp-div {

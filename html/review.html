@@ -1,5 +1,6 @@
 <!DOCTYPE html5>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/536a1a02a0.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://i.imgur.com/3WXoQ00.png" type="image/x-icon">
     <link href="../css/background.css" rel="stylesheet">
     <link href="../css/navbar.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <title>Review</title>
 </head>
+
 <body>
     <nav>
         <ul id="nav-ul">
@@ -23,19 +26,54 @@
     </nav>
 
     <div class="content">
-        <div class="container">
+        <div class="review">
             <div>
                 <h1>Reviews</h1>
-                <table>
+            </div>
+            <div>
+                <table id="reviews">
                     <tr>
                         <th>Reviewer</th>
                         <th>Skill</th>
                         <th>Level</th>
                     </tr>
+                    <tr>
+                        <td>Me</td>
+                        <td>HTML</td>
+                        <td>Intermediate</td>
+                    </tr>
                 </table>
+            </div>
+            <div >
+                <form id="reviewer" onsubmit="return false" autocomplete="off" onemptied="return false">
+                    <h2>Add Review</h2>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="skill">Skill</label>
+                        <input type="text" id="skill" name="skill" required>
+                    </div>
+                    <div>
+                        <label for="level">Level</label>
+                        <select id="level" name="level" required>
+                            <option value="null" selected disabled hidden></option>
+                            <option value="Beginner">Beginner</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Proficient">Proficient</option>
+                        </select>
+                    </div>
+                    <span id="error" style="width: 100px;color: yellow;padding: 5px;display: none;" >Missing Input</span>
+                    <button id="add-btn" type="button" onclick="addReview()">Add Review</button>
+                </form>
             </div>
         </div>
     </div>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/review.js" type="text/javascript"></script>
+
 </body>
+
 </html>

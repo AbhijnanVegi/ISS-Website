@@ -86,6 +86,25 @@ a {
   margin-top: 10px;
 }
 
+.contact-cell {
+  border: 1px solid rgb(107, 212, 216);
+  text-align: center;
+  animation: bordergradiant 15s ease infinite;
+  padding: 3px;
+}
+
+@keyframes bordergradiant {
+  0% {
+		border-color: rgb(107, 212, 216);
+	}
+	50% {
+		border-color: rgb(216, 107, 201);
+	}
+	100% {
+		border-color: rgb(107, 212, 216);
+	}
+} 
+
 #gallery {
   max-width: 75%;
   cursor: pointer;
